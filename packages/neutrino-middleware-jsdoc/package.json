@@ -1,0 +1,38 @@
+{
+  "name": "neutrino-middleware-jsdoc",
+  "description": "Neutrino middleware to generate api documentation using jsdoc",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-middleware",
+    "jsdoc",
+    "documentation"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-middleware-jsdoc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-jsdoc"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-jsdoc/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "docdash": "^0.4.0",
+    "fluture": "^6.2.6",
+    "jsdoc": "^3.4.3",
+    "minami": "^1.2.3",
+    "opn": "^5.1.0"
+  },
+  "peerDependencies": {
+    "neutrino": "^6.0.3"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "neutrino-middleware-extractstyles",
+  "description": "Neutrino middleware that extracts styles from bundles into separate files using the ExtractTextPlugin",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-middleware",
+    "extract",
+    "extract-text",
+    "extract-styles"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-middleware-extractstyles",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-extractstyles"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-extractstyles/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "style-loader": "^0.18.2"
+  },
+  "peerDependencies": {
+    "neutrino": "^6.0.3"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  }
+}

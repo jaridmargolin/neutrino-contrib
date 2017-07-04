@@ -1,0 +1,49 @@
+{
+  "name": "neutrino-preset-library",
+  "description": "Neutrino preset for building libraries.",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-preset",
+    "preset-library"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-preset-library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-preset-library"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-preset-library/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-runtime": "^6.23.0",
+    "coveralls": "^2.13.1",
+    "deepmerge": "^1.4.4",
+    "fluture": "^6.2.6",
+    "minami": "^1.2.3",
+    "neutrino-middleware-bundleanalyzer": "1.0.0",
+    "neutrino-middleware-clean": "^6.0.5",
+    "neutrino-middleware-compile-loader": "^6.0.5",
+    "neutrino-middleware-dev-server": "^6.0.5",
+    "neutrino-middleware-env": "^6.0.5",
+    "neutrino-middleware-jsdoc": "0.0.1",
+    "neutrino-middleware-minify": "^6.0.5",
+    "neutrino-middleware-standardjs": "0.0.1",
+    "neutrino-preset-karma": "^6.1.0",
+    "opn": "^5.1.0"
+  },
+  "peerDependencies": {
+    "neutrino": "^6.0.3"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  }
+}

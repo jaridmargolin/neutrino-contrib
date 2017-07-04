@@ -1,0 +1,42 @@
+{
+  "name": "neutrino-middleware-standardreact",
+  "description": "Neutrino middleware that supports linting JavaScript projects using standard + standard-react rules",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "2.0.1",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-middleware",
+    "standard",
+    "standard-react",
+    "eslint"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-middleware-standardreact",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-standardreact"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-standardreact/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "deepmerge": "^1.4.4",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "neutrino-middleware-eslint": "^6.0.3"
+  },
+  "peerDependencies": {
+    "neutrino": "^6.0.3"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  }
+}

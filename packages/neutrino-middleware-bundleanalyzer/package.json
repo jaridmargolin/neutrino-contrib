@@ -1,0 +1,34 @@
+{
+  "name": "neutrino-middleware-bundleanalyzer",
+  "description": "Neutrino middleware that generates a bundle report using the BundleAnalyzerPlugin",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-middleware",
+    "bundle-analyzer"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-middleware-bundleanalyzer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-bundleanalyzer"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-bundleanalyzer/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "deepmerge": "^1.4.4",
+    "webpack-bundle-analyzer": "^2.8.2"
+  },
+  "peerDependencies": {
+    "neutrino": "^6.0.3"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  }
+}

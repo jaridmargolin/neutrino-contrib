@@ -1,0 +1,22 @@
+{
+  "name": "neutrino-contrib",
+  "description": "A collection of neutrino plugins and presets.",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "updated": "lerna updated",
+    "diff": "lerna diff",
+    "exec": "lerna exec",
+    "all": "lerna run",
+    "ls": "lerna ls",
+    "bump": "lerna exec --concurrency 1 -- ncu -u",
+    "publish": "lerna publish"
+  },
+  "devDependencies": {
+    "lerna": "^2.0.0-rc.5",
+    "ncu": "^0.2.1"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "neutrino-preset-webapp",
+  "description": "Neutrino preset for building react web applications",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-preset",
+    "preset-webapp"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-preset-webapp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-preset-webapp"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-preset-webapp/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "lodash": "^4.17.4",
+    "merge": "^1.2.0",
+    "neutrino-middleware-bundleanalyzer": "^1.0.0",
+    "neutrino-middleware-extractstyles": "^1.0.0",
+    "neutrino-middleware-optimizecss": "^1.0.0",
+    "neutrino-middleware-standardreact": "^2.0.1",
+    "neutrino-preset-react": "^6.0.3"
+  },
+  "peerDependencies": {
+    "neutrino": "^6.0.3"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  }
+}
