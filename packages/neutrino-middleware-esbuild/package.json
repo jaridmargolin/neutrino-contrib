@@ -1,0 +1,39 @@
+{
+  "name": "neutrino-middleware-esbuild",
+  "description": "Neutrino middleware that builds an es2015 module distro",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-middleware",
+    "compile",
+    "build",
+    "es2015"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-middleware-esbuild",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-esbuild"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-esbuild/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "peerDependencies": {
+    "neutrino": "^6.0.3"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "find-root": "^1.1.0",
+    "fs-extra": "^3.0.1",
+    "is-path-inside": "^1.0.0",
+    "node-dir": "^0.1.17"
+  }
+}
