@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-bundleanalyzer",
   "description": "Neutrino middleware that generates a bundle report using the BundleAnalyzerPlugin",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",

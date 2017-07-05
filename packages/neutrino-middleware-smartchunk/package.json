@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-smartchunk",
   "description": "Neutrino middleware to create smarter chunks that only contain utilized modules",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
