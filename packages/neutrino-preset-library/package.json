@@ -2,7 +2,7 @@
   "name": "neutrino-preset-library",
   "description": "Neutrino preset for building libraries.",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "keywords": [
     "neutrino",
@@ -29,7 +29,7 @@
     "deepmerge": "^1.4.4",
     "fluture": "^6.2.6",
     "minami": "^1.2.3",
-    "neutrino-middleware-bundleanalyzer": "^1.0.1",
+    "neutrino-middleware-bundleanalyzer": "^1.1.0",
     "neutrino-middleware-clean": "^6.0.5",
     "neutrino-middleware-compile-loader": "^6.0.5",
     "neutrino-middleware-dev-server": "^6.0.5",
