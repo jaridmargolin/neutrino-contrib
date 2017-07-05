@@ -15,6 +15,7 @@ const opn = require('opn')
 const presetKarma = require('neutrino-preset-karma')
 const middlewareCompileLoader = require('neutrino-middleware-compile-loader')
 const middlewareEsBuild = require('neutrino-middleware-esbuild')
+const middlewareEsNext = require('neutrino-middleware-esnext')
 const middlewareClean = require('neutrino-middleware-clean')
 const middlewareMinify = require('neutrino-middleware-minify')
 const middlewareDevServer = require('neutrino-middleware-dev-server')
@@ -117,6 +118,7 @@ module.exports = (neutrino, _options = {}) => {
     babel: babelCompileOptions
   })
 
+  neutrino.use(middlewareEsNext)
   neutrino.use(middlewareEsBuild, babelOptions)
   neutrino.use(middlewareBundleAnalyzer)
 

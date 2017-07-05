@@ -28,6 +28,7 @@
     "lodash": "^4.17.4",
     "merge": "^1.2.0",
     "neutrino-middleware-bundleanalyzer": "^1.0.0",
+    "neutrino-middleware-esnext": "0.0.1",
     "neutrino-middleware-extractstyles": "^1.0.0",
     "neutrino-middleware-optimizecss": "^1.0.0",
     "neutrino-middleware-standardreact": "^2.0.1",
