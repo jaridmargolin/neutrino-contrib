@@ -15,6 +15,7 @@ const opn = require('opn')
 const presetKarma = require('neutrino-preset-karma')
 const middlewareCompileLoader = require('neutrino-middleware-compile-loader')
 const middlewareEnv = require('neutrino-middleware-env')
+const middlewareEsBuild = require('neutrino-middleware-esbuild')
 const middlewareClean = require('neutrino-middleware-clean')
 const middlewareMinify = require('neutrino-middleware-minify')
 const middlewareDevServer = require('neutrino-middleware-dev-server')
@@ -34,6 +35,12 @@ module.exports = (neutrino, _options = {}) => {
     throw new Error('Missing required option, `library`, in neutrino-preset-library')
   }
 
+  neutrino.use(middlewareStandardjs)
+
+  /* ---------------------------------------------------------------------------
+   * compile
+   * ------------------------------------------------------------------------ */
+
   const MODULES = join(__dirname, 'node_modules')
   const options = merge({
     libraryTarget: 'umd',
@@ -47,11 +54,8 @@ module.exports = (neutrino, _options = {}) => {
     ]
   }, _options)
 
-  // allow passing additional babel config through options
-  options.babel = middlewareCompileLoader.merge({
-    plugins: [
-      require.resolve('babel-plugin-transform-runtime')
-    ],
+  // shared between bundle + es distro
+  const babelOptions = middlewareCompileLoader.merge({
     presets: [[require.resolve('babel-preset-env'), {
       debug: neutrino.options.debug,
       modules: false,
@@ -61,10 +65,14 @@ module.exports = (neutrino, _options = {}) => {
   }, options.babel)
 
   // if no browsers are set, add our default supported browsers
-  const presetEnvOptions = options.babel.presets[0][1]
+  const presetEnvOptions = babelOptions.presets[0][1]
   if (!presetEnvOptions.targets.browsers.length) {
     presetEnvOptions.targets.browsers.push(...options.supportedBrowsers)
   }
+
+  const babelCompileOptions = middlewareCompileLoader.merge({
+    plugins: [require.resolve('babel-plugin-transform-runtime')]
+  }, babelOptions)
 
   neutrino.config
     .context(neutrino.options.root)
@@ -108,21 +116,33 @@ module.exports = (neutrino, _options = {}) => {
       neutrino.options.source,
       neutrino.options.tests
     ],
-    babel: options.babel
+    babel: babelCompileOptions
   })
 
-  neutrino.use(middlewareStandardjs)
-  neutrino.use(middlewareJSDoc)
+  neutrino.use(middlewareEsBuild, babelOptions)
   neutrino.use(middlewareBundleAnalyzer)
 
+  if (process.env.NODE_ENV === 'development') {
+    neutrino.use(middlewareDevServer, options.devServer)
+    neutrino.config.devtool('source-map')
+  }
+
+  if (process.env.NODE_ENV === 'production') {
+    neutrino.use(middlewareClean, { paths: [neutrino.options.output] })
+  }
+
+  /* ---------------------------------------------------------------------------
+   * karma (testing)
+   * ------------------------------------------------------------------------ */
+
   neutrino.use(presetKarma)
+
   neutrino.register('view-cov', () => Future((reject, resolve) => {
     const reportDir = join(process.cwd(), '.coverage', 'report-html')
 
     opn(`file://${reportDir}/index.html`, { wait: false })
       .then(__ => resolve(''), reject)
   }))
-
   neutrino.register('publish-cov', () => Future((reject, resolve) => {
     const coverallsPath = require.resolve('coveralls/bin/coveralls')
     const coveragePath = join(process.cwd(), '.coverage', 'report-lcov',
@@ -133,10 +153,9 @@ module.exports = (neutrino, _options = {}) => {
     ))
   }))
 
-  if (process.env.NODE_ENV === 'development') {
-    neutrino.use(middlewareDevServer, options.devServer)
-    neutrino.config.devtool('source-map')
-  } else {
-    neutrino.use(middlewareClean, { paths: [neutrino.options.output] })
-  }
+  /* ---------------------------------------------------------------------------
+   * docs
+   * ------------------------------------------------------------------------ */
+
+  neutrino.use(middlewareJSDoc)
 }
