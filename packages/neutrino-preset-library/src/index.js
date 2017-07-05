@@ -143,6 +143,7 @@ module.exports = (neutrino, _options = {}) => {
     opn(`file://${reportDir}/index.html`, { wait: false })
       .then(__ => resolve(''), reject)
   }))
+
   neutrino.register('publish-cov', () => Future((reject, resolve) => {
     const coverallsPath = require.resolve('coveralls/bin/coveralls')
     const coveragePath = join(process.cwd(), '.coverage', 'report-lcov',

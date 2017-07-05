@@ -23,6 +23,8 @@
   "main": "src/index.js",
   "dependencies": {
     "deepmerge": "^1.4.4",
+    "fluture": "^6.2.7",
+    "opn": "^5.1.0",
     "webpack-bundle-analyzer": "^2.8.2"
   },
   "peerDependencies": {
