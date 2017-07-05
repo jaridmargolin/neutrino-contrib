@@ -33,7 +33,6 @@
     "neutrino-middleware-clean": "^6.0.5",
     "neutrino-middleware-compile-loader": "^6.0.5",
     "neutrino-middleware-dev-server": "^6.0.5",
-    "neutrino-middleware-env": "^6.0.5",
     "neutrino-middleware-esbuild": "0.0.1",
     "neutrino-middleware-jsdoc": "0.0.1",
     "neutrino-middleware-minify": "^6.0.5",

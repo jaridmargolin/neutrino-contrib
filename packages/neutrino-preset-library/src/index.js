@@ -14,7 +14,6 @@ const Future = require('fluture')
 const opn = require('opn')
 const presetKarma = require('neutrino-preset-karma')
 const middlewareCompileLoader = require('neutrino-middleware-compile-loader')
-const middlewareEnv = require('neutrino-middleware-env')
 const middlewareEsBuild = require('neutrino-middleware-esbuild')
 const middlewareClean = require('neutrino-middleware-clean')
 const middlewareMinify = require('neutrino-middleware-minify')
@@ -110,7 +109,6 @@ module.exports = (neutrino, _options = {}) => {
       .set('fs', 'empty')
       .set('tls', 'empty')
 
-  neutrino.use(middlewareEnv)
   neutrino.use(middlewareCompileLoader, {
     include: [
       neutrino.options.source,
