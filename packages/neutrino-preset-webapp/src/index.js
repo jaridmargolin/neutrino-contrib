@@ -11,6 +11,7 @@ const path = require('path')
 const _ = require('lodash')
 const merge = require('deepmerge')
 const webpack = require('webpack')
+const ip = require('ip')
 
 // 3rd party (middleware)
 const presetReact = require('neutrino-preset-react')
@@ -62,7 +63,8 @@ module.exports = (neutrino) => {
     }])
 
   if (process.env.NODE_ENV === 'development') {
-    neutrino.config.devServer.host('0.0.0.0')
+    .host('0.0.0.0')
+    .public(ip.address())
   }
 
   if (process.env.NODE_ENV !== 'development') {
