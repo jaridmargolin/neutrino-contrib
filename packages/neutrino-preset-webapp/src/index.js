@@ -63,8 +63,9 @@ module.exports = (neutrino) => {
     }])
 
   if (process.env.NODE_ENV === 'development') {
-    .host('0.0.0.0')
-    .public(ip.address())
+    neutrino.config.devServer
+      .host('0.0.0.0')
+      .public(ip.address())
   }
 
   if (process.env.NODE_ENV !== 'development') {
