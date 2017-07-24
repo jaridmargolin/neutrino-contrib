@@ -32,5 +32,5 @@ module.exports = (neutrino, options = {}) => {
   )
 
   neutrino.config.plugin('extract')
-    .use(ExtractTextPlugin, [Object.assign({ filename: '[name].css' }, pluginOptions)])
+    .use(ExtractTextPlugin, [Object.assign({ filename: '[name].[hash].css' }, pluginOptions)])
 }
