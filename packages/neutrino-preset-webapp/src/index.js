@@ -12,6 +12,7 @@ const _ = require('lodash')
 const merge = require('deepmerge')
 const webpack = require('webpack')
 const ip = require('ip')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 // 3rd party (middleware)
 const presetReact = require('neutrino-preset-react')
@@ -74,5 +75,11 @@ module.exports = (neutrino) => {
 
     neutrino.config.plugin('clean')
       .tap(args => [args[0], merge(args[1], { exclude: ['static'] })])
+  }
+
+  if (process.env.NODE_ENV === 'production') {
+    // default neutrino babili plugin was > 10x slower
+    neutrino.config.plugin('minify')
+      .use(UglifyJSPlugin, [{ parallel: true }])
   }
 }

@@ -33,7 +33,8 @@
     "neutrino-middleware-extractstyles": "^2.0.0",
     "neutrino-middleware-optimizecss": "^1.0.1",
     "neutrino-middleware-standardreact": "^2.0.2",
-    "neutrino-preset-react": "^6.0.3"
+    "neutrino-preset-react": "^6.0.3",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2"
   },
   "peerDependencies": {
     "neutrino": "^6.0.3"
