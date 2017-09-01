@@ -2,7 +2,7 @@
   "name": "neutrino-preset-webapp",
   "description": "Neutrino preset for building react web applications",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
@@ -30,7 +30,7 @@
     "merge": "^1.2.0",
     "neutrino-middleware-bundleanalyzer": "^1.1.0",
     "neutrino-middleware-esnext": "^0.0.2",
-    "neutrino-middleware-extractstyles": "^2.0.0",
+    "neutrino-middleware-extractstyles": "^2.0.1",
     "neutrino-middleware-optimizecss": "^1.0.1",
     "neutrino-middleware-standardreact": "^2.0.2",
     "neutrino-preset-react": "^6.0.3",
