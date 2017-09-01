@@ -22,8 +22,8 @@ module.exports = (neutrino, options = {}) => {
     .test(loaderOptions.test || /\.css$/)
 
   const loaders = ExtractTextPlugin.extract(Object.assign({
-    fallback: 'style-loader',
-    use: 'css-loader'
+    fallback: require.resolve('style-loader'),
+    use: require.resolve('css-loader')
   }, loaderOptions))
 
   loaders.forEach(({ loader, options }) => styleRule.use(loader)
