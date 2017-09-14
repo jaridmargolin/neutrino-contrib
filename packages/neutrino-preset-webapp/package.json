@@ -2,7 +2,7 @@
   "name": "neutrino-preset-webapp",
   "description": "Neutrino preset for building react web applications",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "license": "MIT",
   "keywords": [
     "neutrino",
