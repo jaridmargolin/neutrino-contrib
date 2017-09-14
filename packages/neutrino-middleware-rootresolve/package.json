@@ -1,0 +1,35 @@
+{
+  "name": "neutrino-middleware-rootresolve",
+  "description": "Neutrino middleware to utilize root most compatible dependencies",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-middleware",
+    "rootresolve",
+    "resolve",
+    "dedupe"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-middleware-rootresolve",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-rootresolve"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-rootresolve/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "webpack-dependency-suite": "2.4.5"
+  },
+  "peerDependencies": {
+    "neutrino": "^6.0.3"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  }
+}
