@@ -20,6 +20,7 @@ const middlewareRootResolve = require('neutrino-middleware-rootresolve')
 const middlewareEsNext = require('neutrino-middleware-esnext')
 const middlewareStandardReact = require('neutrino-middleware-standardreact')
 const middlewareExtractStyles = require('neutrino-middleware-extractstyles')
+const middlewareLess = require('neutrino-middleware-less')
 const middlewareOptimizeCss = require('neutrino-middleware-optimizecss')
 const middlewareBundleAnalyzer = require('neutrino-middleware-bundleanalyzer')
 
@@ -38,6 +39,7 @@ module.exports = (neutrino) => {
   neutrino.use(middlewareEsNext)
   neutrino.use(middlewareStandardReact)
   neutrino.use(middlewareExtractStyles)
+  neutrino.use(middlewareLess)
   neutrino.use(middlewareOptimizeCss)
   neutrino.use(middlewareBundleAnalyzer)
 

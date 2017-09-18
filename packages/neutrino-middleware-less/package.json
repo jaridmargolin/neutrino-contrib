@@ -1,0 +1,36 @@
+{
+  "name": "neutrino-middleware-less",
+  "description": "Neutrino middleware that adds support for processing less files",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-middleware",
+    "less"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-middleware-less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-less"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-less/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "cssnano": "^3.10.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "optimize-css-assets-webpack-plugin": "^2.0.0"
+  },
+  "peerDependencies": {
+    "neutrino": "^6.0.3"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  }
+}
