@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-less",
   "description": "Neutrino middleware that adds support for processing less files",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
