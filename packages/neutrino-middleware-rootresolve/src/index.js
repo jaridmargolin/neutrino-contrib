@@ -12,8 +12,6 @@ const { RootMostResolvePlugin } = require ('webpack-dependency-suite')
  * -------------------------------------------------------------------------- */
 
 module.exports = (neutrino, options = {}) => {
-  if (process.env.NODE_ENV === 'production') {
-    neutrino.config.resolve.plugin('root-resolver')
-      .use(RootMostResolvePlugin, [process.cwd(), true, true])
-  }
+  neutrino.config.resolve.plugin('root-resolver')
+    .use(RootMostResolvePlugin, [process.cwd(), true, true])
 }
