@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-esbuild",
   "description": "Neutrino middleware that builds an es2015 module distro",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "keywords": [
     "neutrino",

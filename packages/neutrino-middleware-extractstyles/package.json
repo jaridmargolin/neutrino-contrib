@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-extractstyles",
   "description": "Neutrino middleware that extracts styles from bundles into separate files using the ExtractTextPlugin",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "license": "MIT",
   "keywords": [
     "neutrino",
