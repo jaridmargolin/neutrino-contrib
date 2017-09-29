@@ -24,17 +24,17 @@
   },
   "main": "src/index.js",
   "dependencies": {
-    "deepmerge": "^1.4.4",
+    "deepmerge": "^1.5.2",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-react": "^5.0.0",
-    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-standard": "^3.0.1",
-    "neutrino-middleware-eslint": "^6.0.3"
+    "neutrino-middleware-eslint": "^7.0.1"
   },
   "peerDependencies": {
-    "neutrino": "^6.0.3"
+    "neutrino": "^7.0.1"
   },
   "devDependencies": {
     "npm-check-updates": "^2.12.1"

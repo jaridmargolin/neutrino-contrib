@@ -42,7 +42,7 @@
     "opn": "^5.1.0"
   },
   "peerDependencies": {
-    "neutrino": "^6.0.3"
+    "neutrino": "^7.0.1"
   },
   "devDependencies": {
     "npm-check-updates": "^2.12.1"

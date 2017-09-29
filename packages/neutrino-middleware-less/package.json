@@ -24,11 +24,10 @@
   "dependencies": {
     "cssnano": "^3.10.0",
     "less": "^2.7.2",
-    "less-loader": "^4.0.5",
-    "optimize-css-assets-webpack-plugin": "^2.0.0"
+    "less-loader": "^4.0.5"
   },
   "peerDependencies": {
-    "neutrino": "^6.0.3"
+    "neutrino": "^7.0.1"
   },
   "devDependencies": {
     "npm-check-updates": "^2.12.1"
