@@ -27,7 +27,7 @@
     "webpack-dependency-suite": "2.4.5"
   },
   "peerDependencies": {
-    "neutrino": "^6.0.3"
+    "neutrino": "^7.0.1"
   },
   "devDependencies": {
     "npm-check-updates": "^2.12.1"

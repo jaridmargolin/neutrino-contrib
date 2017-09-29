@@ -23,7 +23,7 @@
   "main": "src/index.js",
   "dependencies": {
     "babel-plugin-lodash": "^3.2.11",
-    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "ip": "^1.1.5",
     "lodash": "^4.17.4",
@@ -35,11 +35,11 @@
     "neutrino-middleware-optimizecss": "^1.0.1",
     "neutrino-middleware-rootresolve": "^0.0.2",
     "neutrino-middleware-standardreact": "^2.0.2",
-    "neutrino-preset-react": "^6.0.3",
+    "neutrino-preset-react": "^7.0.1",
     "uglifyjs-webpack-plugin": "^1.0.0-beta.2"
   },
   "peerDependencies": {
-    "neutrino": "^6.0.3"
+    "neutrino": "^7.0.1"
   },
   "devDependencies": {
     "npm-check-updates": "^2.12.1"
