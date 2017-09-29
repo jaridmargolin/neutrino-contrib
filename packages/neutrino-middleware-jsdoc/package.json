@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-jsdoc",
   "description": "Neutrino middleware to generate api documentation using jsdoc",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "keywords": [
     "neutrino",
