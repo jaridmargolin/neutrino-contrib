@@ -2,7 +2,7 @@
   "name": "neutrino-preset-library",
   "description": "Neutrino preset for building libraries.",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
@@ -37,7 +37,7 @@
     "neutrino-middleware-esnext": "^1.0.0",
     "neutrino-middleware-jsdoc": "^1.0.0",
     "neutrino-middleware-minify": "^6.0.5",
-    "neutrino-middleware-standardjs": "^1.0.0",
+    "neutrino-middleware-standardjs": "^1.0.1",
     "neutrino-preset-karma": "^6.1.0",
     "opn": "^5.1.0"
   },

@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-standardreact",
   "description": "Neutrino middleware that supports linting JavaScript projects using standard + standard-react rules",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
