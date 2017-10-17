@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-standardjs",
   "description": "Neutrino middleware that supports linting JavaScript projects using standardjs rules",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
