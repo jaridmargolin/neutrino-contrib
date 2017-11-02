@@ -31,10 +31,10 @@ const middlewareBundleAnalyzer = require('neutrino-middleware-bundleanalyzer')
 // https://github.com/vuejs/vue-loader/issues/666#issuecomment-281966916
 process.noDeprecation = true
 
-module.exports = (neutrino) => {
+module.exports = (neutrino, opts = {}) => {
   neutrino.options.output = path.join(neutrino.options.root, 'dist')
 
-  neutrino.use(presetReact)
+  neutrino.use(presetReact, opts)
   neutrino.use(middlewareRootResolve)
   neutrino.use(middlewareEsNext)
   neutrino.use(middlewareStandardReact)
