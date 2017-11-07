@@ -18,12 +18,12 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
     loader: styleRule.use('style').get('loader'),
     options: styleRule.use('style').get('options'),
   }
-  
+
   const styleLoaders = Array.from(styleRule.uses.store.keys())
-  .filter((key) => key !== 'style')
-  .map((key) => styleRule.use(key))
-  .map((use) => ({loader: use.get('loader'), options: use.get('options')}))
-  
+    .filter((key) => key !== 'style')
+    .map((key) => styleRule.use(key))
+    .map((use) => ({loader: use.get('loader'), options: use.get('options')}))
+
   const loaderOptions = Object.assign({
     fallback: options.fallback || styleFallback || 'style-loader',
     use: options.use || styleLoaders || 'css-loader',
@@ -32,8 +32,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
   const pluginOptions = Object.assign({
     filename: '[name].[hash].css',
   }, options.plugin || {})
-  
-  const loaders = ExtractTextPlugin.extract(loaderOptions])
+
+  const loaders = ExtractTextPlugin.extract(loaderOptions)
 
   styleRule.uses.clear()
 
