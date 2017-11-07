@@ -12,6 +12,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
  * -------------------------------------------------------------------------- */
 
  module.exports = (neutrino, options = {}) => {
+  const isStart = neutrino.options.command === 'start'
   const styleRule = neutrino.config.module.rule('style')
   const styleTest = styleRule.get('test')
   const styleFallback = {
@@ -39,7 +40,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
   }, options.extract)
 
   const pluginOptions = Object.assign({
-    filename: '[name].css',
+    filename: isStart ? '[name].css' : '[name].[contenthash].css',
   }, options.plugin)
 
   const loaders = ExtractTextPlugin.extract(extractOptions)
