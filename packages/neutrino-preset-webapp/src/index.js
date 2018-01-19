@@ -86,7 +86,7 @@ module.exports = (neutrino, opts = {}) => {
       .use(UglifyJSPlugin, [{
         parallel: true,
         uglifyOptions: {
-          compress: { inline: false }
+          compress: { reduce_funcs: false }
         }
       }])
   }
