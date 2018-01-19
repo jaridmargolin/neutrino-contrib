@@ -83,6 +83,11 @@ module.exports = (neutrino, opts = {}) => {
   if (process.env.NODE_ENV === 'production') {
     // default neutrino babili plugin was > 10x slower
     neutrino.config.plugin('minify')
-      .use(UglifyJSPlugin, [{ parallel: true }])
+      .use(UglifyJSPlugin, [{
+        parallel: true,
+        uglifyOptions: {
+          compress: { inline: false }
+        }
+      }])
   }
 }
