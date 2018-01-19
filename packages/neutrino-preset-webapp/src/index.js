@@ -8,7 +8,6 @@
 const path = require('path')
 
 // 3rd party (libs)
-const _ = require('lodash')
 const merge = require('deepmerge')
 const webpack = require('webpack')
 const ip = require('ip')
@@ -64,7 +63,7 @@ module.exports = (neutrino, opts = {}) => {
   // supporting lodash/fp
   neutrino.config.plugin('replace-lodash-es')
     .use(webpack.NormalModuleReplacementPlugin, [/^lodash-es(\/|$)/, (res) => {
-      res.request = res.request.replace(/^lodash-es(\/|$)/, 'lodash$1');
+      res.request = res.request.replace(/^lodash-es(\/|$)/, 'lodash$1')
     }])
 
   if (process.env.NODE_ENV === 'development') {
