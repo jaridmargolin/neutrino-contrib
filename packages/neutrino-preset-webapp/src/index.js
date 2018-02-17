@@ -15,6 +15,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 // 3rd party (middleware)
 const presetReact = require('neutrino-preset-react')
+const middlewareReactSVG = require('neutrino-middleware-reactsvg')
 const middlewareRootResolve = require('neutrino-middleware-rootresolve')
 const middlewareEsNext = require('neutrino-middleware-esnext')
 const middlewareStandardReact = require('neutrino-middleware-standardreact')
@@ -34,6 +35,7 @@ module.exports = (neutrino, opts = {}) => {
   neutrino.options.output = path.join(neutrino.options.root, 'dist')
 
   neutrino.use(presetReact, opts)
+  neutrino.use(middlewareReactSVG)
   neutrino.use(middlewareRootResolve)
   neutrino.use(middlewareEsNext)
   neutrino.use(middlewareStandardReact)

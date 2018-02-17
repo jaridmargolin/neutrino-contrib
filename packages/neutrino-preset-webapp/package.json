@@ -33,6 +33,7 @@
     "neutrino-middleware-extractstyles": "^4.0.1",
     "neutrino-middleware-less": "^1.0.0",
     "neutrino-middleware-optimizecss": "^2.0.0",
+    "neutrino-middleware-reactsvg": "^0.0.1",
     "neutrino-middleware-rootresolve": "^1.0.0",
     "neutrino-middleware-standardreact": "^3.0.1",
     "neutrino-preset-react": "^7.0.1",

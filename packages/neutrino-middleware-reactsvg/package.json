@@ -1,0 +1,33 @@
+{
+  "name": "neutrino-middleware-reactsvg",
+  "description": "Neutrino middleware to allow import SVGs as react components",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-middleware",
+    "react-svg"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-middleware-reactsvg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-reactsvg"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-middleware-reactsvg/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "react-svg-loader": "2.2.0-alpha.02daccb2"
+  },
+  "peerDependencies": {
+    "neutrino": "^7.0.1"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  }
+}
