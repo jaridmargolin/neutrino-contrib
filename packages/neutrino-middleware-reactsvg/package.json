@@ -22,7 +22,8 @@
   },
   "main": "src/index.js",
   "dependencies": {
-    "react-svg-loader": "2.2.0-alpha.02daccb2"
+    "react-svg-loader": "2.2.0-alpha.02daccb2",
+    "react-svg-core": "2.2.0-alpha.02daccb2"
   },
   "peerDependencies": {
     "neutrino": "^7.0.1"
