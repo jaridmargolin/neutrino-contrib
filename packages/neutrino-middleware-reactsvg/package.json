@@ -22,6 +22,7 @@
   },
   "main": "src/index.js",
   "dependencies": {
+    "deepmerge": "^2.0.1",
     "react-svg-core": "2.2.0-alpha.02daccb2",
     "react-svg-loader": "2.2.0-alpha.02daccb2"
   },
