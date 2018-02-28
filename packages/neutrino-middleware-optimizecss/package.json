@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-optimizecss",
   "description": "Neutrino middleware that optimizes css from bundles into separate files using the OptimizeCssAssetsPlugin",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
