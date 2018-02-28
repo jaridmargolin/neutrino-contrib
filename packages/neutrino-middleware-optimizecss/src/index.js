@@ -15,7 +15,10 @@ module.exports = (neutrino, options = {}) => {
   if (process.env.NODE_ENV !== 'devlopment') {
     neutrino.config.plugin('optimizecss')
       .use(OptimizeCssAssetsPlugin, [Object.assign({
-        cssProcessorOptions: { discardComments: {removeAll: true } },
+        cssProcessorOptions: {
+          discardComments: { removeAll: true },
+          reduceIdents: false
+        },
         canPrint: false
       }, options)])
   }
