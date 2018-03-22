@@ -16,7 +16,7 @@ module.exports = (neutrino, options = {}) => {
   const reactSvgRule = neutrino.config.module.rule('react-svg')
   const babelConfig = neutrino.config.module.rule('compile').use('babel').toConfig()
   const defaultLoaderOptions = {
-    svgo: { plugins: [{ removeViewBox: false }] },
+    svgo: { plugins: [{ removeViewBox: false }, { cleanupIDs: false }] },
     jsx: true
   }
 
