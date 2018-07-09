@@ -17,7 +17,6 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const presetReact = require('neutrino-preset-react')
 const middlewareReactSVG = require('neutrino-middleware-reactsvg')
 const middlewareRootResolve = require('neutrino-middleware-rootresolve')
-const middlewareEsNext = require('neutrino-middleware-esnext')
 const middlewareStandardReact = require('neutrino-middleware-standardreact')
 const middlewareExtractStyles = require('neutrino-middleware-extractstyles')
 const middlewareLess = require('neutrino-middleware-less')
@@ -37,7 +36,6 @@ module.exports = (neutrino, opts = {}) => {
   neutrino.use(presetReact, opts)
   neutrino.use(middlewareReactSVG)
   neutrino.use(middlewareRootResolve)
-  neutrino.use(middlewareEsNext)
   neutrino.use(middlewareStandardReact)
   neutrino.use(middlewareExtractStyles)
   neutrino.use(middlewareLess)
@@ -52,6 +50,19 @@ module.exports = (neutrino, opts = {}) => {
     version: false,
     colors: true
   })
+
+  // Change neutrino's default behavior to compile everything except modules
+  // found in node_modules. This forces symlinked packages to be compiled
+  // because webpack will use the realpath rather than the symlink path.
+  neutrino.config.module
+    .rule('compile')
+    .include
+      .clear()
+      .end()
+    .exclude
+      .clear()
+      .add(/\/node_modules\//)
+      .end()
 
   neutrino.config.module
     .rule('compile')
