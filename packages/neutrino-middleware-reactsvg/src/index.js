@@ -6,6 +6,7 @@
 
 // 3rd party
 const merge = require('deepmerge')
+const regexCombiner = require('regex-combiner')
 
 /* -----------------------------------------------------------------------------
  * middleware
@@ -14,25 +15,29 @@ const merge = require('deepmerge')
 module.exports = (neutrino, options = {}) => {
   const reactSvgTest = /\.react\.svg$/
   const reactSvgRule = neutrino.config.module.rule('react-svg')
-  const babelConfig = neutrino.config.module.rule('compile').use('babel').toConfig()
+  const compileRule = neutrino.config.module.rule('compile')
+  const svgRule = neutrino.config.module.rule('svg')
+
   const defaultLoaderOptions = {
     svgo: { plugins: [{ removeViewBox: false }, { cleanupIDs: false }] },
     jsx: true
   }
 
-  reactSvgRule.test(reactSvgTest)
+  if (compileRule) {
+    const { test } = compileRule.toConfig()
 
-  if (babelConfig && babelConfig.loader) {
-    reactSvgRule.use('babel')
-      .loader(babelConfig.loader)
-      .options(babelConfig.options || {})
+    compileRule
+      .test(regexCombiner([test, reactSvgTest]))
   }
 
-  reactSvgRule.use('react-svg')
+  reactSvgRule
+    .test(reactSvgTest)
+    .use('react-svg')
     .loader(require.resolve('react-svg-loader'))
     .options(merge(defaultLoaderOptions, options.loaderOptions || {}))
 
   // ensure only specifically defined svgs are treated as components
-  neutrino.config.module.rule('svg')
-    .exclude.add(reactSvgTest)
+  svgRule
+    .exclude
+    .add(reactSvgTest)
 }
