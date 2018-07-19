@@ -25,6 +25,7 @@
     "babel-plugin-lodash": "^3.2.11",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "find-babel-config": "^1.1.0",
     "ip": "^1.1.5",
     "lodash": "^4.17.4",
     "merge": "^1.2.0",
@@ -36,6 +37,7 @@
     "neutrino-middleware-rootresolve": "^1.0.0",
     "neutrino-middleware-standardreact": "^3.0.1",
     "neutrino-preset-react": "^7.0.1",
+    "resolve-cwd": "^2.0.0",
     "uglifyjs-webpack-plugin": "^1.1.6"
   },
   "peerDependencies": {

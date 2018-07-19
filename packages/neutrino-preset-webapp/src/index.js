@@ -12,6 +12,8 @@ const merge = require('deepmerge')
 const webpack = require('webpack')
 const ip = require('ip')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const findBabelConfig = require('find-babel-config')
+const resolveCwd = require('resolve-cwd')
 
 // 3rd party (middleware)
 const presetReact = require('neutrino-preset-react')
@@ -62,12 +64,20 @@ module.exports = (neutrino, opts = {}) => {
       .add(/\/node_modules\//)
       .end()
 
+  // Modify babelconfig to ensure presets/plugins are resolved relative to
+  // application rather than file being transformed
+  const { config: babelconfig = {} } = findBabelConfig.sync(process.cwd())
+  babelconfig.presets = (babelconfig.presets || []).map(resolveCwd)
+  babelconfig.plugins = (babelconfig.plugins || []).map(resolveCwd)
+
+  // Overwite web/react preset babel config in favor of using .babelrc
   neutrino.config.module
     .rule('compile')
     .use('babel')
-    .tap((options) => merge(options, {
-      presets: [ require.resolve('babel-preset-stage-0') ],
-      plugins: [ require.resolve('babel-plugin-lodash') ]
+    .tap(__ => ({
+      cacheDirectory: false,
+      babelrc: false,
+      ...babelconfig
     }))
 
   // transform lodash -> lodash-es... required due to lodash-es not
