@@ -22,7 +22,6 @@
   },
   "main": "src/index.js",
   "dependencies": {
-    "find-babel-config": "^1.1.0",
     "ip": "^1.1.5",
     "lodash": "^4.17.4",
     "merge": "^1.2.0",
@@ -33,7 +32,6 @@
     "neutrino-middleware-reactsvg": "^1.0.0-0",
     "neutrino-middleware-rootresolve": "^1.0.0",
     "neutrino-preset-react": "^7.0.1",
-    "resolve-cwd": "^2.0.0",
     "uglifyjs-webpack-plugin": "^1.1.6"
   },
   "peerDependencies": {
