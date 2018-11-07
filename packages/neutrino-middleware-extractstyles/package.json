@@ -24,6 +24,7 @@
   },
   "main": "src/index.js",
   "dependencies": {
+    "css-hot-loader": "^1.3.2",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.0",
     "style-loader": "^0.18.2"
