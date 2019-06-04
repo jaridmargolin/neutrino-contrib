@@ -1,11 +1,16 @@
-# Neutrino "SmartChunk" Middleware
+# Warning: this project as been deprecated
+
+If you're on Neutrino 9.x we recommend using
+[Neutrino Style Minify](https://github.com/neutrinojs/neutrino/tree/master/packages/style-minify).
+
+# Neutrino OptimizeCss Middleware
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url]
 
-`neutrino-middleware-smartchunk` is a Neutrino middleware to create smarter chunks that only contain utilized modules.
+`neutrino-middleware-optimizecss` is a Neutrino middleware that optimizes css from bundles into separate files using the OptimizeCssAssetsPlugin.
 
-[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-smartchunk.svg
-[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-smartchunk.svg
-[npm-url]: https://npmjs.org/package/neutrino-middleware-smartchunk
+[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-optimizecss.svg
+[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-optimizecss.svg
+[npm-url]: https://npmjs.org/package/neutrino-middleware-optimizecss
 
 ## License
 

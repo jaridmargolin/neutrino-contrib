@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-rootresolve",
   "description": "Neutrino middleware to utilize root most compatible dependencies",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "keywords": [
     "neutrino",
@@ -24,12 +24,12 @@
   },
   "main": "src/index.js",
   "dependencies": {
-    "webpack-dependency-suite": "2.4.5"
-  },
-  "peerDependencies": {
-    "neutrino": "^7.0.1"
+    "webpack-dependency-suite": "^2.4.5"
   },
   "devDependencies": {
-    "npm-check-updates": "^2.12.1"
+    "npm-check-updates": "3.1.9"
+  },
+  "peerDependencies": {
+    "neutrino": "^9.0.0-0"
   }
 }

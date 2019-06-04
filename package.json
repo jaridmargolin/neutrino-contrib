@@ -4,8 +4,19 @@
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
   "version": "0.0.1",
   "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "fixtures/*",
+      "packages/*",
+      "packages-deprecated/*"
+    ],
+    "nohoist": [
+      "**/left-pad",
+      "**/left-pad/**"
+    ]
+  },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "updated": "lerna updated",
     "diff": "lerna diff",
@@ -13,10 +24,15 @@
     "all": "lerna run",
     "ls": "lerna ls",
     "bump": "lerna exec --concurrency 1 -- ncu -u",
+    "test": "ava tests/*.test.js",
     "publish": "lerna publish"
   },
   "devDependencies": {
-    "lerna": "^2.0.0-rc.5",
-    "ncu": "^0.2.1"
+    "ava": "2.0.0",
+    "fs-extra": "8.0.1",
+    "lerna": "3.14.1",
+    "ncu": "0.2.1",
+    "puppeteer": "1.17.0",
+    "serve-handler": "6.0.1"
   }
 }

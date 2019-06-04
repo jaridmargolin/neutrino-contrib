@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-esnext",
   "description": "Neutrino middleware to compile node_modules which contain pkg.esnext",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "keywords": [
     "neutrino",
@@ -21,14 +21,13 @@
     "bump": "ncu -u"
   },
   "main": "src/index.js",
-  "peerDependencies": {
-    "neutrino": "^7.0.1"
+  "dependencies": {
+    "find-root": "^1.1.0"
   },
   "devDependencies": {
-    "npm-check-updates": "^2.12.1"
+    "npm-check-updates": "3.1.9"
   },
-  "dependencies": {
-    "find-root": "^1.1.0",
-    "is-path-inside": "^1.0.0"
+  "peerDependencies": {
+    "neutrino": "^9.0.0-0"
   }
 }

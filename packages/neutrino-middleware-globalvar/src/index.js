@@ -22,14 +22,10 @@ const requireOptions = function (options, ...args) {
   })
 }
 
-module.exports = (neutrino, options = {}) => {
+module.exports = (options = {}) => (neutrino) => {
   requireOptions(options, 'name', 'value')
 
-  let value = options.value
-  if (_.isObject(value)) {
-    value = JSON.stringify(value)
-  }
-
+  const value = JSON.stringify(options.value)
   const { config } = neutrino
   const moduleName = `${options.name}-${md5(value)}`
   const contents = `/* eslint-disable */\n${options.name} = ${value}`

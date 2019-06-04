@@ -10,15 +10,12 @@ const { resolve } = require('path')
 
 // 3rd party
 const findRoot = require('find-root')
-const isPathInside = require('is-path-inside')
 
 /* -----------------------------------------------------------------------------
  * middleware
  * -------------------------------------------------------------------------- */
 
-module.exports = (neutrino, options = {}) => {
-  const nodeModulesDir = resolve(__dirname, 'node_modules')
-
+module.exports = (__ = {}) => (neutrino) => {
   neutrino.config.resolve.mainFields
       .add('esnext')
       .add('browser')

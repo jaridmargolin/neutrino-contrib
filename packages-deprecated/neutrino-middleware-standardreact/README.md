@@ -1,15 +1,20 @@
-# Neutrino StandardJS Middleware
+# Warning: this project as been deprecated
+
+If you're on Neutrino 9.x we recommend using
+[Neutrino StandardJS Preset](https://github.com/neutrinojs/neutrino/tree/master/packages/standardjs).
+
+# Neutrino StandardReact Middleware
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url]
 
-`neutrino-middleware-standardjs` is a Neutrino middleware that supports linting JavaScript projects using standardjs rules.
+`neutrino-middleware-standardreact` is a Neutrino middleware that supports linting JavaScript projects using standard + standard-react rules.
 
-[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-standardjs.svg
-[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-standardjs.svg
-[npm-url]: https://npmjs.org/package/neutrino-middleware-standardjs
+[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-standardreact.svg
+[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-standardreact.svg
+[npm-url]: https://npmjs.org/package/neutrino-middleware-standardreact
 
 ## License
 
-The MIT License (MIT) Copyright (c) 2017 Jarid Margolin
+The MIT License (MIT) Copyright (c) 2016 Jarid Margolin
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

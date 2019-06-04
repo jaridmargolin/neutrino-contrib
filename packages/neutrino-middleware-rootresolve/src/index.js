@@ -11,7 +11,7 @@ const { RootMostResolvePlugin } = require ('webpack-dependency-suite')
  * middleware
  * -------------------------------------------------------------------------- */
 
-module.exports = (neutrino, options = {}) => {
+module.exports = (options = {}) => (neutrino) => {
   neutrino.config.resolve.plugin('root-resolver')
     .use(RootMostResolvePlugin, [process.cwd(), true, true])
 }

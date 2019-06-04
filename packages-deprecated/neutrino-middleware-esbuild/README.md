@@ -1,15 +1,21 @@
-# Neutrino StandardReact Middleware
+# Warning: this project as been deprecated
+
+If you're on Neutrino 9.x we recommend using the
+[Babel CLI](https://babeljs.io/docs/en/babel-cli) directly.
+
+
+# Neutrino ESNext Middleware
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url]
 
-`neutrino-middleware-standardreact` is a Neutrino middleware that supports linting JavaScript projects using standard + standard-react rules.
+Neutrino middleware that builds an es2015 module distro
 
-[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-standardreact.svg
-[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-standardreact.svg
-[npm-url]: https://npmjs.org/package/neutrino-middleware-standardreact
+[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-esbuild.svg
+[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-esbuild.svg
+[npm-url]: https://npmjs.org/package/neutrino-middleware-esbuild
 
 ## License
 
-The MIT License (MIT) Copyright (c) 2016 Jarid Margolin
+The MIT License (MIT) Copyright (c) 2017 Jarid Margolin
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

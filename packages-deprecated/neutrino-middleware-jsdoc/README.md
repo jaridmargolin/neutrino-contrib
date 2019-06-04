@@ -1,11 +1,15 @@
-# Neutrino OptimizeCss Middleware
+# Warning: this project as been deprecated
+
+As of Neutrino 9.x, neutrino has dropped its CLI interface. Rather than using this middleware, use jsdoc directly.
+
+# Neutrino JSDoc Middleware
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url]
 
-`neutrino-middleware-optimizecss` is a Neutrino middleware that optimizes css from bundles into separate files using the OptimizeCssAssetsPlugin.
+`neutrino-middleware-jsdoc` is a Neutrino middleware to generate api documentation using jsdoc.
 
-[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-optimizecss.svg
-[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-optimizecss.svg
-[npm-url]: https://npmjs.org/package/neutrino-middleware-optimizecss
+[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-jsdoc.svg
+[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-jsdoc.svg
+[npm-url]: https://npmjs.org/package/neutrino-middleware-jsdoc
 
 ## License
 

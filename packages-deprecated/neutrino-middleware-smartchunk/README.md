@@ -1,11 +1,16 @@
-# Neutrino ESNext Middleware
+# Warning: this project as been deprecated
+
+If you're on Neutrino 9.x, you will automatically leverage the new "smarter"
+[Webpack SplitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/).
+
+# Neutrino "SmartChunk" Middleware
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url]
 
-Neutrino middleware that builds an es2015 module distro
+`neutrino-middleware-smartchunk` is a Neutrino middleware to create smarter chunks that only contain utilized modules.
 
-[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-esbuild.svg
-[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-esbuild.svg
-[npm-url]: https://npmjs.org/package/neutrino-middleware-esbuild
+[npm-image]: https://img.shields.io/npm/v/neutrino-middleware-smartchunk.svg
+[npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-smartchunk.svg
+[npm-url]: https://npmjs.org/package/neutrino-middleware-smartchunk
 
 ## License
 

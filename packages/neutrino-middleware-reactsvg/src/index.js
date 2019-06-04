@@ -12,11 +12,11 @@ const regexCombiner = require('regex-combiner')
  * middleware
  * -------------------------------------------------------------------------- */
 
-module.exports = (neutrino, options = {}) => {
+module.exports = (options = {}) => (neutrino) => {
   const reactSvgTest = /\.react\.svg$/
   const reactSvgRule = neutrino.config.module.rule('react-svg')
   const compileRule = neutrino.config.module.rule('compile')
-  const svgRule = neutrino.config.module.rule('svg')
+  const imageRule = neutrino.config.module.rule('image')
 
   const defaultLoaderOptions = {
     svgo: { plugins: [{ removeViewBox: false }, { cleanupIDs: false }] },
@@ -37,7 +37,7 @@ module.exports = (neutrino, options = {}) => {
     .options(merge(defaultLoaderOptions, options.loaderOptions || {}))
 
   // ensure only specifically defined svgs are treated as components
-  svgRule
+  imageRule
     .exclude
     .add(reactSvgTest)
 }

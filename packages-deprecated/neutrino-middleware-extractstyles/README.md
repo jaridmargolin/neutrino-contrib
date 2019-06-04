@@ -1,3 +1,8 @@
+# Warning: this project as been deprecated
+
+If you're on Neutrino 9.x we recommend using
+[Neutrino Style Loader Middleware](https://github.com/neutrinojs/neutrino/tree/master/packages/style-loader).
+
 # Neutrino ExtractStyles Middleware
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url]
 
