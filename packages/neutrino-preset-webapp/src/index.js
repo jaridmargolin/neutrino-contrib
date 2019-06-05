@@ -32,12 +32,7 @@ module.exports = (opts = {}) => (neutrino) => {
   // TODO: Remove and use the default neutrino output, `build`.
   neutrino.options.output = path.join(neutrino.options.root, 'dist')
 
-  neutrino.use(presetReact({
-    // style: {
-    //   test: /\.(css|less)$/,
-    //   loaders: ['less-loader']
-    // }
-  }))
+  neutrino.use(presetReact())
   neutrino.use(middlewareReactSVG())
   neutrino.use(middlewareRootResolve())
   neutrino.use(middlewareBundleAnalyzer())
@@ -64,6 +59,10 @@ module.exports = (opts = {}) => (neutrino) => {
   // instead compile everything except modules found in node_modules. This
   // forces symlinked packages to be compiled because webpack will use the
   // realpath rather than the symlink path.
+  //
+  // Note: By default, @neutrino/react supports react-native-web with the
+  // exception of correctly compiling react-native-* dependencies. We will also
+  // fix this shortcomming.
   neutrino.config.module
     .rule('compile')
     .include
@@ -71,7 +70,7 @@ module.exports = (opts = {}) => (neutrino) => {
       .end()
     .exclude
       .clear()
-      .add(/\/node_modules\//)
+      .add(/node_modules(?!\/react-native-)/)
       .end()
 
   if (process.env.NODE_ENV === 'development') {
