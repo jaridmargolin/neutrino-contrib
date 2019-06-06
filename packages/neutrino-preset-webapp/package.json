@@ -25,7 +25,6 @@
     "@neutrinojs/copy": "^9.0.0-0",
     "@neutrinojs/react": "^9.0.0-0",
     "@neutrinojs/style-minify": "^9.0.0-0",
-    "ip": "^1.1.5",
     "merge": "^1.2.1",
     "neutrino-middleware-bundleanalyzer": "^3.0.0",
     "neutrino-middleware-reactsvg": "^2.0.0-0",

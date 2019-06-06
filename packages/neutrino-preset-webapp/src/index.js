@@ -9,7 +9,6 @@ const path = require('path')
 
 // 3rd party (libs)
 const merge = require('deepmerge')
-const ip = require('ip')
 
 // 3rd party (middleware)
 const presetReact = require('@neutrinojs/react')
