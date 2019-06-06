@@ -73,12 +73,6 @@ module.exports = (options = {}) => (neutrino) => {
       .add(/node_modules(?!\/react-native-)/)
       .end()
 
-  if (process.env.NODE_ENV === 'development') {
-    neutrino.config.devServer
-      .host('0.0.0.0')
-      .public(ip.address())
-  }
-
   if (process.env.NODE_ENV === 'production') {
     neutrino.config.plugin('clean')
       .tap(args => [merge(args[0], {
