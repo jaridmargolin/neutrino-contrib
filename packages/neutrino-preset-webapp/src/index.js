@@ -28,11 +28,11 @@ const middlewareBundleAnalyzer = require('neutrino-middleware-bundleanalyzer')
 // https://github.com/vuejs/vue-loader/issues/666#issuecomment-281966916
 process.noDeprecation = true
 
-module.exports = (opts = {}) => (neutrino) => {
+module.exports = (options = {}) => (neutrino) => {
   // TODO: Remove and use the default neutrino output, `build`.
   neutrino.options.output = path.join(neutrino.options.root, 'dist')
 
-  neutrino.use(presetReact())
+  neutrino.use(presetReact(options))
   neutrino.use(middlewareReactSVG())
   neutrino.use(middlewareRootResolve())
   neutrino.use(middlewareBundleAnalyzer())
