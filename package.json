@@ -33,6 +33,6 @@
     "lerna": "3.14.1",
     "ncu": "0.2.1",
     "puppeteer": "1.17.0",
-    "serve-handler": "6.0.1"
+    "with-fileserver": "0.0.1"
   }
 }

@@ -13585,7 +13585,7 @@ serialize-javascript@^1.7.0:
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.7.0.tgz#d6e0dfb2a3832a8c94468e6eb1db97e55a192a65"
   integrity sha512-ke8UG8ulpFOxO8f8gRYabHQe/ZntKlcig2Mp+8+URDP1D8vJZ0KUt7LYo07q25Z/+JVSgpr/cui9PIp5H6/+nA==
 
-serve-handler@6.0.1:
+serve-handler@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/serve-handler/-/serve-handler-6.0.1.tgz#4155c3f8aab265d0240671259aeda5a5bf4fef70"
   integrity sha512-k/im4Fbx96d8VcrJDjrsagNd9Vq18tVYRDDe90rpNO8Mr76KJF/zES5tBZdlLEbhBXjOs36m9Wl+hRCiDnYfmA==
@@ -15517,6 +15517,13 @@ windows-release@^3.1.0:
   integrity sha512-QTlz2hKLrdqukrsapKsINzqMgOUpQW268eJ0OaOpJN32h272waxR9fkB9VoWRtK7uKHG5EHJcTXQBD8XZVJkFA==
   dependencies:
     execa "^1.0.0"
+
+with-fileserver@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/with-fileserver/-/with-fileserver-0.0.1.tgz#3a677727a421a3a35e76a34db5af62e06b3c1087"
+  integrity sha512-iSr8IcfEIUdyEFSul3U+zUf7L6cIyrFWxjkD6svWewiH06PWJ6GWjGnGMLv6UbwqxXqGPSIdh3QnFhbGAjx9QA==
+  dependencies:
+    serve-handler "^6.0.1"
 
 wordwrap@0.0.2:
   version "0.0.2"

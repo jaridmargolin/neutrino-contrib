@@ -13,9 +13,7 @@ import { promisify } from 'util'
 // 3rd party
 import test from 'ava';
 import puppeteer from 'puppeteer';
-
-// lib
-import withFileServer from './utils/with-file-server';
+import withFileServer from 'with-fileserver';
 
 /* -----------------------------------------------------------------------------
  * test
