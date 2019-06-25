@@ -1,0 +1,36 @@
+{
+  "name": "neutrino-middleware-globals",
+  "description": "Neutrino middleware to inject global variables",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "neutrino",
+    "neutrino-middleware",
+    "global",
+    "variable"
+  ],
+  "homepage": "https://github.com/jaridmargolin/neutrino-contrib/tree/master/packages/neutrino-middleware-globals",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaridmargolin/neutrino-contrib"
+  },
+  "bugs": {
+    "url": "https://github.com/jaridmargolin/neutrino-contrib/issues"
+  },
+  "scripts": {
+    "bump": "ncu -u"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "md5": "^2.2.1",
+    "virtual-module-webpack-plugin": "^0.4.1"
+  },
+  "devDependencies": {
+    "npm-check-updates": "3.1.9"
+  },
+  "peerDependencies": {
+    "neutrino": "^9.0.0-0"
+  }
+}
