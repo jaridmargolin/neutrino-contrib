@@ -24,7 +24,7 @@
     "jest": "^24.8.0",
     "neutrino": "^9.0.0-0",
     "neutrino-middleware-less": "^2.0.0",
-    "neutrino-middleware-globals": "^0.0.1",
+    "neutrino-middleware-globals": "^0.0.2",
     "neutrino-preset-webapp": "^6.0.0",
     "prettier": "^1.17.1",
     "prettier-eslint-cli": "^4.7.1",
