@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-globals",
   "description": "Neutrino middleware to inject global variables",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
