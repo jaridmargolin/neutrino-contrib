@@ -26,7 +26,7 @@ module.exports = (options = {}) => (neutrino) => {
   requireOptions(options, 'values')
 
   const { config } = neutrino
-  const moduleName = `globals-${md5(options.values)}`
+  const moduleName = `globals-${md5(JSON.stringify(options.values))}`
   let contents = `/* eslint-disable */`
 
   _.forEach(options.values, (val, key) => {
