@@ -5,7 +5,7 @@
  * -------------------------------------------------------------------------- */
 
 // 3rd party
-const { RootMostResolvePlugin } = require ('webpack-dependency-suite')
+const RootResolverPlugin = require ('root-resolver-plugin')
 
 /* -----------------------------------------------------------------------------
  * middleware
@@ -13,5 +13,5 @@ const { RootMostResolvePlugin } = require ('webpack-dependency-suite')
 
 module.exports = (options = {}) => (neutrino) => {
   neutrino.config.resolve.plugin('root-resolver')
-    .use(RootMostResolvePlugin, [process.cwd(), true, true])
+    .use(RootResolverPlugin)
 }
