@@ -28,7 +28,7 @@
     "merge": "^1.2.1",
     "neutrino-middleware-bundleanalyzer": "^3.0.0",
     "neutrino-middleware-reactsvg": "^2.0.0-0",
-    "neutrino-middleware-rootresolve": "^2.0.0"
+    "neutrino-middleware-rootresolve": "^3.0.0"
   },
   "devDependencies": {
     "npm-check-updates": "3.1.9"
