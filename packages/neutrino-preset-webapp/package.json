@@ -2,7 +2,7 @@
   "name": "neutrino-preset-webapp",
   "description": "Neutrino preset for building react web applications",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
@@ -26,9 +26,9 @@
     "@neutrinojs/react": "^9.0.0-0",
     "@neutrinojs/style-minify": "^9.0.0-0",
     "merge": "^1.2.1",
-    "neutrino-middleware-bundleanalyzer": "^3.0.0",
-    "neutrino-middleware-reactsvg": "^2.0.0-0",
-    "neutrino-middleware-rootresolve": "^3.0.0"
+    "neutrino-middleware-bundleanalyzer": "^3.0.1",
+    "neutrino-middleware-reactsvg": "^2.0.1",
+    "neutrino-middleware-rootresolve": "^3.0.1"
   },
   "devDependencies": {
     "npm-check-updates": "3.1.9"

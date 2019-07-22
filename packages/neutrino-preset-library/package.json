@@ -2,7 +2,7 @@
   "name": "neutrino-preset-library",
   "description": "Neutrino preset for building libraries.",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",
@@ -24,7 +24,7 @@
   "dependencies": {
     "@neutrinojs/library": "^9.0.0-0",
     "lodash": "^4.17.11",
-    "neutrino-middleware-bundleanalyzer": "^3.0.0"
+    "neutrino-middleware-bundleanalyzer": "^3.0.1"
   },
   "devDependencies": {
     "npm-check-updates": "3.1.9"

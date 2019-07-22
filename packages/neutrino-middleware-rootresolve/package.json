@@ -2,7 +2,7 @@
   "name": "neutrino-middleware-rootresolve",
   "description": "Neutrino middleware to utilize root most compatible dependencies",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "keywords": [
     "neutrino",

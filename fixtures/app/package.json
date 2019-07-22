@@ -1,6 +1,6 @@
 {
   "name": "neutrino-contrib-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "left-pad": "^1.3.0",
-    "neutrino-contrib-lib": "^1.0.0",
+    "neutrino-contrib-lib": "^1.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.8.8"
@@ -23,8 +23,8 @@
     "eslint": "^5.16.0",
     "jest": "^24.8.0",
     "neutrino": "^9.0.0-0",
-    "neutrino-middleware-less": "^2.0.0",
-    "neutrino-middleware-globals": "^0.0.2",
+    "neutrino-middleware-globals": "^0.0.3",
+    "neutrino-middleware-less": "^2.0.1",
     "neutrino-preset-webapp": "^6.0.0",
     "prettier": "^1.17.1",
     "prettier-eslint-cli": "^4.7.1",
