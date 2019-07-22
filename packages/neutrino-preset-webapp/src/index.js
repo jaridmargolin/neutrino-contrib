@@ -54,6 +54,9 @@ module.exports = (options = {}) => (neutrino) => {
     colors: true
   })
 
+  // set alias for absolute imports of project modules
+  neutrino.config.resolve.alias.set('@', `${path.join(process.cwd(), 'src')}`)
+
   // Change neutrino's default behavior (compiling only source and test) to
   // instead compile everything except modules found in node_modules. This
   // forces symlinked packages to be compiled because webpack will use the
