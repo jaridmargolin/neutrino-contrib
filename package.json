@@ -8,8 +8,7 @@
   "workspaces": {
     "packages": [
       "fixtures/*",
-      "packages/*",
-      "packages-deprecated/*"
+      "packages/*"
     ],
     "nohoist": [
       "**/left-pad",
